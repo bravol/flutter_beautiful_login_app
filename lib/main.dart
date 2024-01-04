@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_beautiful_login_app/login_screen.dart';
+import 'package:flutter_beautiful_login_app/pallete.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,9 +11,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: Pallete.backgroundColor,
+      ),
+      home: const LoginScreen(),
     );
   }
 }
