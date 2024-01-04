@@ -9,11 +9,11 @@ class LoginField extends StatelessWidget {
   Widget build(BuildContext context) {
     return ConstrainedBox(
       constraints: const BoxConstraints(
-        maxWidth: 400,
+        maxWidth: 376,
       ),
       child: TextFormField(
         decoration: InputDecoration(
-          contentPadding: const EdgeInsets.all(27),
+          contentPadding: const EdgeInsets.all(20),
           enabledBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: Pallete.borderColor, width: 3),
             borderRadius: BorderRadius.all(
