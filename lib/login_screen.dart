@@ -20,6 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //BlocConsumer=BlocListener + BlocBuilder
       body: BlocConsumer<AuthBloc, AuthState>(listener: (context, state) {
         // TODO: implement listener
         if (state is AuthFailure) {
